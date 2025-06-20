@@ -28,7 +28,7 @@
                             <!-- 상품 리스트 S -->
                             <ul class="prd_list">
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd01.jpg" alt="바지01">
                                         </div>
@@ -42,7 +42,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd02.jpg" alt="바지02">
                                         </div>
@@ -56,7 +56,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd03.jpg" alt="바지03">
                                         </div>
@@ -70,7 +70,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd04.jpg" alt="바지04">
                                         </div>
@@ -84,7 +84,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd05.jpg" alt="바지05">
                                         </div>
@@ -98,7 +98,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
+                                    <a href="./shop_view01.php">
                                         <div class="img_bx">
                                             <img src="../img/sub/prd06.jpg" alt="바지06">
                                         </div>
