@@ -4,21 +4,21 @@ php학습을 하며 언어를 활용하여 쇼핑몰 제작 하였습니다.
 
 /* INDEX */
 
-php Setting
-Variable, Constant, data_type, operator
-Conditional Statement, Loop,
-Array
-Function
-HTTP, GET, POST
-FORM
-File Upload
-Validation
-Exaption Handling
-Session
-Cookie
-DataBase
-Prouduct View, Register, Edit, Deleate
-Login, Logout, Notice, Join
+php Setting <br>
+Variable, Constant, data_type, operator<br>
+Conditional Statement, Loop,<br>
+Array<br>
+Function<br>
+HTTP, GET, POST<br>
+FORM<br>
+File Upload<br>
+Validation<br>
+Exaption Handling<br>
+Session<br>
+Cookie<br>
+DataBase<br>
+Prouduct View, Register, Edit, Deleate<br>
+Login, Logout, Notice, Join<br>
 
 /* 사용된 언어 */
 
