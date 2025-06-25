@@ -58,7 +58,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
+                                <a href="../member/cart.php">
                                     <i class="xi-basket"></i>
                                 </a>
                             </li>

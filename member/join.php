@@ -171,7 +171,6 @@
                                         <div class="btn_line">
                                             <button type="submit" class="btn btn_login">JOIN</button>
                                         </div>
-                                        
                                     </div>
                                 </form>
                             </div>

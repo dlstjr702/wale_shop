@@ -10,12 +10,12 @@
                 <div class="ms_ir">
                     <div id="shp_visual">
                         <div class="col">
-                            <a href="#!">
+                            <a href="../sub/shop_list01.php">
                                 <img src="../img/main/ms_visual01.jpg" alt="남자모델사진">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#!">
+                            <a href="../sub/shop_list01.php">
                                 <img src="../img/main/ms_visual02.jpg" alt="여자모델사진">
                             </a>
                         </div>

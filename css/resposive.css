@@ -181,7 +181,12 @@
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 상품 인풋 */
-
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list,
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 게시판 리스트 */
@@ -452,6 +457,10 @@
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 쇼핑(상품) 인풋 */
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list,
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 이벤트/공지사항 리스트 */
@@ -462,6 +471,29 @@
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 이벤트/공지사항 인풋 */
 
+
+    /**********************************************************************************************************************/
+
+
+    /**********************************************************************************************************************/
+    /* 주문 */
+    /**********************************************************************************************************************/
+    /*--------------------------------------------------------------------------------------------------------------------*/
+    /* 주문- 장바구니 */
+    .wrap #pt_cart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrap #pt_cart .left {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .wrap #pt_cart .right {
+        min-width: unset;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 
     /**********************************************************************************************************************/
 }
@@ -617,12 +649,67 @@
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 쇼핑(상품) 뷰 */
+    .wrap #shp_shop_list .mid .prd_view {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .img_bx {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .img_bx .prd_main_sd {
+        width: 100%;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .img_bx .prd_sub_sd {
+        display: none;
+    }
+
+
+    /* 리뷰 */
+    .wrap #rvw_tab .tab_bd>li .rvw_bx .rvw_rows {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 쇼핑(상품) 인풋 */
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row02 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list,
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dt {
+        min-width: 90px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dt>.tit {
+        font-size: 16px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .rd_frm .rd_bx>label {
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 - 이벤트/공지사항 리스트 */
+    .wrap #shp_notice_list{
+        padding:0;
+        gap:30px;
+    }
     .wrap #shp_notice_list .mid>.noti_list>li {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -664,6 +751,44 @@
 
     .wrap #shp_notice_list .mid .noti_view .view_line>.col>dt {
         min-width: 100px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx {
+        gap: 20px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .top>.tit {
+        font-size: 26px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .top>.des {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .cent {
+        line-height: 16px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .cent>li {
+        font-size: 11px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row>.rd_list>li {
+        min-width: 65px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row>.rd_list>li>label {
+        height: 35px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row>.od_num {
+        width: 65px;
+        height: 35px;
+        border: 1px solid #ddd;
+        outline: none;
+        font-size: 13px;
+        text-align: center;
     }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
@@ -773,11 +898,46 @@
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 상품 뷰 */
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row>.tit {
+        height: unset;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .wrap #shp_shop_list .mid .prd_view .txt_bx .od_ir .od_row>.rd_list {
+        width: 100%;
+    }
+
+    /* 리뷰 */
+    .wrap #rvw_tab .tab_hd>li {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .wrap #rvw_tab .tab_bd>li .rvw_bx .rvw_rows {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .wrap #rvw_tab .tab_bd>li .rvw_bx .rvw_rows .rvw_row .img_bx {
+        height: 140px;
+    }
 
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 상품 인풋 */
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dt {
+        min-width: 65px;
+    }
 
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dt>.tit {
+        font-size: 14px;
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 게시판 리스트 */
@@ -901,7 +1061,10 @@
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 상품 인풋 */
-
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list,
+    .wrap #shp_shop_list .mid .prd_inp .inp_ir .inp_row .inp_col>dd .img_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /*--------------------------------------------------------------------------------------------------------------------*/
     /* 서브 게시판 리스트 */

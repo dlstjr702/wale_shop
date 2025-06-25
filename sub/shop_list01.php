@@ -124,7 +124,7 @@
 
                             <!-- 글쓰지 S -->
                              <div class="wrt_btn_list">
-                                <a href="#!" class="btn wrt_btn">ADD</a>
+                                <a href="./shop_input01.php" class="btn wrt_btn">ADD</a>
                                 <a href="#!" class="btn wrt_btn">EDIT</a>
                                 <a href="#!" class="btn wrt_btn">DELETE</a>
                              </div>

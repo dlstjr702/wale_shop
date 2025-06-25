@@ -100,8 +100,55 @@ $(document).ready(function () {
     //===================================================================================================// 
     // 서브영역
     //===================================================================================================// 
+    //---------------------------------------------------------------------------------------------------//
+    // 서브 - 상품 뷰 슬라이드 
+    $('.prd_sub_sd').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        vertical: true,
+        asNavFor: '.prd_main_sd',
+        focusOnSelect: true
+    });
+    $('.prd_main_sd').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // asNavFor: '.prd_sub_sd',
+        arrows: false,
+        dots: false,
+        centerMode: false,
+    });
 
-    
+    //---------------------------------------------------------------------------------------------------//
+    // 서브 - 상품 뷰 하단 상세페이지 부분 탭 메뉴
+    $("#rvw_tab .tab_hd li").click(function () {
+        let nowTc = $(this).index();
+
+        $("#rvw_tab .tab_hd li").removeClass("on");
+        $(this).addClass("on");
+        $("#rvw_tab .tab_bd li").removeClass("on");
+        $("#rvw_tab .tab_bd li").eq(nowTc).addClass("on");
+
+    })
+
+
+    //---------------------------------------------------------------------------------------------------//
+    // 서브 - 장바구니 옵션변경 모달창
+    $(".chg_txt").click(function () {
+        $("#mdl_opt_chg").stop().fadeIn();
+    })
+
+    $(".btn_opt_cls").click(function () {
+        $("#mdl_opt_chg").stop().fadeOut();
+    })
+
+  $("#mdl_opt_chg").mouseup(function (e) {
+        var LayerPopup = $(".mdl_wrap");
+        if (LayerPopup.has(e.target).length === 0) {
+            $("#mdl_opt_chg").fadeOut();
+        }
+    });
 
     //===================================================================================================// 
 
